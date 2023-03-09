@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.numbersBlock{
+  width: 240px;
+  height: 224px;
+  margin: 100px 100px;
+  display: grid;
+  grid-template: repeat(4,1fr)/ repeat(3,1fr);
+}
+.button{
+  width: 78px;
+  height: 48px;
+}
+.zero{
+
+width: 152px;
+height: 48px;
+grid-column-start: 1;
+grid-column-end: 3;
+
+
+}
+
+.optionButtons{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+
+width: 240px;
+}
+.optionButton{
+  width: 52px;
+  height: 48px;
+}
+.display{
+  width: 200px;
+  background-color: rgb(232, 229, 229);
+  height: 50px;
+  border: 2px black solid;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.display h3{
+  margin: 0 auto;
+}
