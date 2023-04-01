@@ -9,8 +9,8 @@ export const Number = (value) => {
         setValue(element)
     }
     return (
-        <div className={"button " + value.className}>
+       
             <button value={value.value} className={"button " + value.className} onClick={(event) => clickButton(event.target.value)}>{value.value}</button>
-        </div>
+      
     )
 }
