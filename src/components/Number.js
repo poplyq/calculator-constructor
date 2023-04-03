@@ -4,9 +4,10 @@ import { ButtonNumber } from "./context/ButtonNumber";
 
 
 export const Number = (value) => {
-    const { setValue } = useContext(ButtonNumber)
+    const { setValue, isConstructor } = useContext(ButtonNumber)
     const clickButton = (element) => {
-        setValue(element)
+        if (isConstructor){
+        setValue(element)}
     }
     return (
        

@@ -1,5 +1,5 @@
 
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import React from 'react';
 import { Constructor } from './components/Constructor';
@@ -19,6 +19,7 @@ function App() {
   const [isOption, setIsOption] = useState(false)
   const [dragItem, setDragItem] = useState("")
   const [currentBoard, setBoard] = useState([])
+  const [isConstructor, setIsConstructor] = useState(false)
 
   useEffect(() => {
     if (buttonValue) {
@@ -27,6 +28,7 @@ function App() {
       setValue(0)
       setIsOption(false)
     }
+    // eslint-disable-next-line
   }, [buttonValue]);
 
   useEffect(() => {
@@ -52,6 +54,7 @@ function App() {
       }
       setIsOption(true)
     }
+    // eslint-disable-next-line
   }, [buttonOption])
 
   return (
@@ -65,9 +68,18 @@ function App() {
         dragItem,
         setDragItem,
         currentBoard,
-        setBoard
+        setBoard,
+        isConstructor,
+        setIsConstructor
       }}>
-      <button className='routingButtons'></button>
+        <div className='buttonsContaner'>
+          <Link to={'/'}>
+            <button className='routingButtons'> Constructor</button>
+          </Link>
+          <Link to={'/runtime'}>
+            <button className='routingButtons'> Runtime</button>
+          </Link>
+        </div>
         <Routes>
           <Route path='/' element={<Constructor />} />
           <Route path='/runtime' element={<Runtime />} />

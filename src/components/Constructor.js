@@ -8,9 +8,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 export const Constructor = () => {
 
-    const { dragItem, currentBoard, setBoard, setDragItem } = useContext(ButtonNumber)
+    const { dragItem, currentBoard, setBoard, setDragItem,setIsConstructor } = useContext(ButtonNumber)
 
     const dispatch = useDispatch()
+
     const isDisplay = useSelector(state => state.constuctor.isDisplay)
     const isNumbers = useSelector(state => state.constuctor.isNumbers)
     const isOption = useSelector(state => state.constuctor.isOptions)
@@ -18,7 +19,7 @@ export const Constructor = () => {
     const [coverdElement, setCoverd] = useState('')
     const [dragElement, setDraged] = useState('')
 
-
+  setIsConstructor(false)
     function dragStart(event, element) {
 
     }
@@ -135,7 +136,8 @@ export const Constructor = () => {
                         {item === 3 && <OptionButtons props={true} />}
                         {item === 4 && <Equal props={true} />}
                     </div>
-                )}
+                )
+                }
             </div>
         </div>
     )
