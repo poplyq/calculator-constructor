@@ -1,13 +1,19 @@
 The app has 2 modes : Constructor - u can drag the elements of ur future callculator from left side to right (only desktop) in the order u want to see it.
 When the order  u like is done u should choose  "runtime" mode where calculathions are possible. 
 
-Link on deploy: https://app.netlify.com/sites/poplyq-calculator/overview
+Link on deploy: https://poplyq-calculator.netlify.app/
+
+<img width="598" alt="Снимок экрана 2023-04-29 в 14 12 03" src="https://user-images.githubusercontent.com/101501073/235299660-aa058b3c-4ba1-4ebb-86e4-81d873255f03.png">
+
+<img width="681" alt="Снимок экрана 2023-04-29 в 14 09 22" src="https://user-images.githubusercontent.com/101501073/235299656-fdf9b79b-f51a-485b-922d-5ed6365479ab.png">
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
