@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+The app has 2 modes : Constructor - u can drag the elements of ur future callculator from left side to right (only desktop) in the order u want to see it.
+When the order  u like is done u should choose  "runtime" mode where calculathions are possible. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link on deploy: https://app.netlify.com/sites/poplyq-calculator/overview
 
 ## Available Scripts
 
